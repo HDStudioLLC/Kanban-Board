@@ -63,7 +63,8 @@ footer {
   width: 100%;
   background: var(--secondary);
   color: var(--tertiary);
-  font-size: 2.4rem;
+  justify-content: center;
+  font-size: 1 rem;
   padding: 20px;
   border-top: 5px solid var(--primary);
 }
@@ -72,7 +73,7 @@ footer {
   color: var(--primary);
   margin-bottom: 5px;
   margin-top: 0;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 
 .page-content {
