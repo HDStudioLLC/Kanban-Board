@@ -12,10 +12,16 @@
 <header>
   <h1 class="page-title"> </h1>
 <p> Click the Button below to add a task!</p>
-<button class="btn" id="save-task">Add Task</button><main class="page-content">
+<form id="task-form">
+  <div class="form-group">
+    <input type="text" name="task-name" placeholder="Enter Task Name"/> </div>
+<button class="btn" id="save-task">Add Task</button>
+  </div>
+  </form>
+<main class="page-content">
 <section class="task-list-wrapper">
 <h2 class="list-title"> To Do </h2>
-<ul class="task-list">
+<ul class="task-list" id="To-Do's">
   <li class="task-item"> A task is going to be added soon!</li>
 </ul>
 </section>
