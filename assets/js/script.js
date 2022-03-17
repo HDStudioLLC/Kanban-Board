@@ -20,13 +20,7 @@ var taskFormHandler = function (event) {
   var taskNameInput = document.querySelector("input[name='task-name'").value;
   var taskTypeInput = document.querySelector("select[name='task-type']").value;
 
-
-
-
-
   formEl.reset();
-
-
 
   // check if task is new or one being edited by seeing if it has a data-task-id attribute
   var isEdit = formEl.hasAttribute("data-task-id");
@@ -522,14 +516,13 @@ var saveTasks = function () {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 // Create a new task
-=======
-  var taskDataObj = {
-    name: taskNameInput,
-    type: taskTypeInput,
-  };
-
-  createTaskEl(taskDataObj);
+var taskDataObj = {
+  name: taskNameInput,
+  type: taskTypeInput,
 };
+
+createTaskEl(taskDataObj);
+// };
 
 var createTaskEl = function (taskDataObj) {
   // create list item
@@ -552,5 +545,3 @@ var createTaskEl = function (taskDataObj) {
   // add list item to list
   tasksToDoEl.appendChild(listItemEl);
 };
-
-
