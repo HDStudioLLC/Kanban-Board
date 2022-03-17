@@ -531,7 +531,7 @@ var saveTasks = function () {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 // Create a new task
-=======
+
   var taskDataObj = {
     name: taskNameInput,
     type: taskTypeInput,
@@ -562,11 +562,3 @@ var createTaskEl = function (taskDataObj) {
   tasksToDoEl.appendChild(listItemEl);
 };
 
->>>>>>> 6946e4615678bbe40de1f812919c2fb4c31def54
-formEl.addEventListener("submit", taskFormHandler);
-
-// for edit and delete buttons
-pageContentEl.addEventListener("click", taskButtonHandler);
-
-// for changing the status
-pageContentEl.addEventListener("change", taskStatusChangeHandler);
